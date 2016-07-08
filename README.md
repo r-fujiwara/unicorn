@@ -1,3 +1,5 @@
+# THIS IS UNOFFICIAL REPOSITORY, this is for personal research
+
 = unicorn: Rack HTTP server for fast clients and Unix
 
 unicorn is an HTTP server for Rack applications designed to only serve
