@@ -1,5 +1,5 @@
 # -*- encoding: binary -*-
-ENV["VERSION"] or abort "VERSION= must be specified"
+ENV["VERSION"]=5.10
 manifest = File.readlines('.manifest').map! { |x| x.chomp! }
 require 'olddoc'
 extend Olddoc::Gemspec
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.email = %q{unicorn-public@bogomips.org}
   s.executables = %w(unicorn unicorn_rails)
   s.extensions = %w(ext/unicorn_http/extconf.rb)
-  s.extra_rdoc_files = extra_rdoc_files(manifest)
+  # s.extra_rdoc_files = extra_rdoc_files(manifest)
   s.files = manifest
   s.homepage = Olddoc.config['rdoc_url']
   s.test_files = test_files
