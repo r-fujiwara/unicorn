@@ -1,5 +1,5 @@
 # -*- encoding: binary -*-
-ENV["VERSION"]=5.10
+ENV["VERSION"]=5.1.0
 manifest = File.readlines('.manifest').map! { |x| x.chomp! }
 require 'olddoc'
 extend Olddoc::Gemspec
